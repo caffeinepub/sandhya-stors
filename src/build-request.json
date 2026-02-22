@@ -1,0 +1,77 @@
+{
+  "kind": "build_request",
+  "title": "Add URL shortener feature to Sandhya Stors website",
+  "projectName": "Sandhya Stors",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "text": "Add a URL shortener section to the Sandhya Stors homepage that allows users to paste a long URL and generate a shortened version",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-12",
+          "msg-13"
+        ],
+        "quotes": [
+          "Create Second link convert to short link",
+          "Yes but use Sandhya Stors"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new section appears on the homepage with an input field for long URLs",
+        "Users can submit a URL and receive a shortened version",
+        "The shortened URLs are functional and redirect to the original URLs",
+        "The section maintains the warm, inviting design aesthetic of the existing site"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create backend functionality to store URL mappings with unique short codes and handle redirects from short URLs to original URLs",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-12",
+          "msg-13"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend stores mappings between short codes and original URLs",
+        "Backend generates unique short codes for each URL",
+        "Backend provides an endpoint to create new shortened URLs",
+        "Backend provides an endpoint to retrieve original URLs from short codes"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Display the generated shortened URL to users with a copy-to-clipboard button for easy sharing",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-12"
+        ]
+      },
+      "acceptanceCriteria": [
+        "After generating a short URL, it is displayed prominently to the user",
+        "A copy button allows users to copy the shortened URL to clipboard",
+        "Visual feedback confirms when the URL has been copied"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain the existing warm, earthy color scheme and neighborhood convenience store aesthetic",
+    "Keep the URL shortener as an additional section on the homepage, not a separate page",
+    "Do not modify the existing services information or WhatsApp contact integration"
+  ],
+  "nonGoals": [
+    "Custom vanity URLs or user-chosen short codes",
+    "URL analytics or click tracking",
+    "User accounts or authentication for URL management",
+    "URL expiration or deletion features",
+    "QR code generation for shortened URLs"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

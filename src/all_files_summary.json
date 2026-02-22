@@ -1,0 +1,16 @@
+{
+  "backend/main.mo": "Motoko actor implementing a URL shortener service with two public functions: generateShortUrl creates unique IDs for URLs and stores mappings, while processRedirect retrieves original URLs by ID.",
+  "feature_evidence.json": "Feature evidence report documenting two implemented features: URL shortener section on homepage and copy-to-clipboard functionality for shortened URLs, both with high confidence.",
+  "frontend-file-summaries.txt": "JSON object containing summaries of five frontend files covering the main app component, styling system, Tailwind config, clipboard hook, and URL shortener component.",
+  "frontend/index.css": "Tailwind CSS configuration with custom CSS variables defining a complete design system using OKLCH color space for both light and dark modes with neutral/warm tones.",
+  "frontend/index.html": "Basic HTML entry point for the Sandhya Stors React application with root div and module script reference.",
+  "frontend/src/App.tsx": "Main React application component rendering the complete Sandhya Stors website including header, hero section, services grid, URL shortener section, contact information, and footer with WhatsApp integration.",
+  "frontend/src/components/UrlShortener.tsx": "React component providing URL shortening functionality with form validation, backend integration via useActor hook, loading states, error handling, and copy-to-clipboard feature for generated short URLs.",
+  "frontend/src/hooks/useActor.ts": "React hook managing ICP backend actor creation with Internet Identity authentication support, automatic query invalidation on identity changes, and anonymous actor fallback.",
+  "frontend/src/hooks/useCopyToClipboard.ts": "Custom React hook providing clipboard copy functionality using the Navigator Clipboard API with automatic success state reset after 2 seconds.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context provider and hook for Internet Identity authentication, managing AuthClient lifecycle, login/logout flows, identity persistence, and authentication status tracking.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom CSS variables defining a warm earthy color palette (terracotta/orange primary, cream secondary) for both light and dark modes, plus WhatsApp green and chart colors.",
+  "frontend/src/main.tsx": "React application entry point that sets up QueryClient for data fetching, InternetIdentityProvider for authentication, and renders the root App component.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the default theme with custom colors mapped to CSS variables (using OKLCH color space), border radius utilities, custom animations for accordions, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state tracking document for Sandhya Stors website showing completed features (homepage, WhatsApp integration, location display, URL shortener UI) and pending backend URL shortener functionality."
+}

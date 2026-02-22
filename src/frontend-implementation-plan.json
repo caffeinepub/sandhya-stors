@@ -1,0 +1,50 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add URL Shortener Feature to Sandhya Stors Homepage",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "summary": "Add a URL shortener section to the homepage that allows users to paste a long URL and generate a shortened version",
+      "acceptanceCriteria": [
+        "A new section appears on the homepage with an input field for long URLs",
+        "Users can submit a URL and receive a shortened version",
+        "The shortened URLs are functional and redirect to the original URLs",
+        "The section maintains the warm, inviting design aesthetic of the existing site"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/UrlShortener.tsx",
+          "operation": "create",
+          "description": "Create a URL shortener component that renders an input field for long URLs, a submit button, and displays the generated short URL with a copy button. Use the warm earthy color palette from index.css (terracotta/orange primary, cream secondary). Call the backend generateShortUrl method via useActor hook. Include loading states and error handling. Display the shortened URL with the application's base domain prepended to the short code."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add the UrlShortener component as a new section on the homepage between the services grid and the WhatsApp contact button. Import and render the UrlShortener component. Maintain the existing warm, inviting design aesthetic and ensure the new section integrates seamlessly with the existing layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Display the generated shortened URL to users with a copy-to-clipboard button for easy sharing",
+      "acceptanceCriteria": [
+        "After generating a short URL, it is displayed prominently to the user",
+        "A copy button allows users to copy the shortened URL to clipboard",
+        "Visual feedback confirms when the URL has been copied"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/hooks/useCopyToClipboard.ts",
+          "operation": "create",
+          "description": "Create a custom React hook that handles copying text to clipboard using the Navigator Clipboard API. Return a copy function and a state indicating whether the copy was successful. Include a timeout to reset the success state after a few seconds for visual feedback."
+        },
+        {
+          "path": "frontend/src/components/UrlShortener.tsx",
+          "operation": "modify",
+          "description": "Integrate the useCopyToClipboard hook to enable copying the shortened URL. Add a copy button next to the displayed shortened URL that uses the hook's copy function. Display visual feedback (e.g., changing button text from 'Copy' to 'Copied!' or showing a success icon) when the URL is successfully copied to clipboard. Ensure the copy button is prominently displayed and easy to use."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-20T06:14:03.658Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 3,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-5",
+        "summary": "Add a URL shortener section to the Sandhya Stors homepage that allows users to paste a long URL and generate a shortened version",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/UrlShortener.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/UrlShortener.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Create backend functionality to store URL mappings with unique short codes and handle redirects from short URLs to original URLs",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Display the generated shortened URL to users with a copy-to-clipboard button for easy sharing",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/hooks/useCopyToClipboard.ts",
+          "frontend/src/components/UrlShortener.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/hooks/useCopyToClipboard.ts",
+          "frontend/src/components/UrlShortener.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/UrlShortener.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useCopyToClipboard.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

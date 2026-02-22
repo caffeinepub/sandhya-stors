@@ -1,0 +1,7 @@
+{
+  "frontend/src/App.tsx": "Main application component for Sandhya Stors website featuring hero section, services grid, URL shortener section, contact section with WhatsApp integration, and complete header/footer layout.",
+  "frontend/src/index.css": "Global styles with warm, earthy OKLCH color system featuring terracotta/orange primary colors, cream secondaries, and WhatsApp green, designed for a welcoming neighborhood store aesthetic with support for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom warm color palette including hero gradients and WhatsApp brand colors, plus custom border radius and typography settings for the neighborhood store design.",
+  "frontend/src/hooks/useCopyToClipboard.ts": "Custom React hook that handles copying text to clipboard using the Navigator Clipboard API with automatic success state reset after 2 seconds.",
+  "frontend/src/components/UrlShortener.tsx": "URL shortener component with input field for long URLs, form validation, backend integration via useActor hook, loading states, error handling, and copy-to-clipboard functionality for generated short URLs."
+}

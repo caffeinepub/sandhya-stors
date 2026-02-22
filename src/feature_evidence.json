@@ -1,0 +1,43 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-url-shortener-section-to-the-sandhya-stors-homepage-that-allows-users-to-paste-a-long-url-and-generate-a-shortened-version",
+      "featureTitle": "Add a URL shortener section to the Sandhya Stors homepage that allows users to paste a long URL and generate a shortened version",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/UrlShortener.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-display-the-generated-shortened-url-to-users-with-a-copy-to-clipboard-button-for-easy-sharing",
+      "featureTitle": "Display the generated shortened URL to users with a copy-to-clipboard button for easy sharing",
+      "files": [
+        "frontend/src/components/UrlShortener.tsx",
+        "frontend/src/hooks/useCopyToClipboard.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
